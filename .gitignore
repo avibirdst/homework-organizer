@@ -1,2 +1,38 @@
+# ---- Python 运行时缓存 ----
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+
+# ---- 虚拟环境 ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- 打包产物 ----
+build/
+dist/
+*.egg-info/
+
+# ---- 测试与覆盖率报告 ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- 编辑器与 IDE 配置 ----
+.vscode/
+.idea/
+.vs/
+*.swp
+*~
+
+# ---- 工具运行时产生的数据 ----
+# .homework_organizer/ 为工具在整理目录下创建的日志与报告目录，
+# 属于运行时数据而非源码。如需将某次整理日志纳入版本管理，可删除本行。
+.homework_organizer/
+
+# ---- 演示数据 ----
+# 演示数据可由 make_demo_data.py 随时重新生成，无需纳入版本管理。
+demo_data/*
+!demo_data/.gitkeep
