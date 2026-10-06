@@ -1,0 +1,21 @@
+# 作业文件批量整理工具 —— 依赖清单
+#
+# 安装方式：
+#     pip install -r requirements.txt
+#
+# 说明：版本号用 >= 而不写死，是为了避免「明明装了新版却因为版本号不匹配装不上」的问题。
+#       这些库的 API 在所列版本之后都保持稳定，用新版本不会有兼容问题。
+
+# ---- 界面 ----
+# PySide6 是 Qt 官方出品的 Python 绑定，比 PyQt5 的许可证更宽松（LGPL）。
+PySide6>=6.6.0
+
+# ---- 文档解析（读字数用）----
+# python-docx 用来读 .docx（注意：读不了老的 .doc 格式）
+python-docx>=1.1.0
+
+# pypdf 用来读 .pdf 的文本层（注意：图片型扫描件读不出文字）
+pypdf>=4.0.0
+
+# openpyxl 用来读 .xlsx
+openpyxl>=3.1.0
